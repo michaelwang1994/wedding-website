@@ -60,6 +60,15 @@
 				
 	    	}
 		});
+
+		$('#fh5co-offcanvas').click(function(){
+			if ( $('body').hasClass('offcanvas') ) {
+
+    			$('body').removeClass('offcanvas');
+    			$('.js-fh5co-nav-toggle').removeClass('active');
+				
+	    	}
+		});
 	};
 
 
