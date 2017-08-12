@@ -61,27 +61,51 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	
+	<!-- Scroll Disabler -->
+	<script src="js/scrollDisable.js"></script>
 
+	<!-- Password -->
+	<script src="js/passwordCheck.js"></script>
+	
 
 	</head>
-	<body>
+	<body onload="toggleScroll()">
+		<div id="splashscreen">
+			<div id="password-form" class="form-group col-sm-6 col-sm-offset-3">
+				<div class="row" id="password-row">
+					<label for="Password" class="sr-only">Password</label>
+					<input name="password" type="password" class="form-control" placeholder="Password" id="password-field">
+					<button type="submit" class="btn btn-default btn-block password-submit" id="submit-button" onclick="checkPassword()">Submit</button>
+				</div>
+			</div>
+		</div>
 
 		<!-- Navigator -->
 		<div class="fh5co-loader"></div>
 		<div id="page">
 			<nav class="fh5co-nav" role="navigation">
-						<div id="fh5co-offcanvas" class="col-xs-10 text-right menu-1">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-2">
+							<div id="fh5co-logo">
+								<a href="index.html"></a>
+							</div>
+						</div>
+						<div class="col-xs-10 text-right menu-1">
 							<ul>
-								<li id="in-page-link"><a href="#top">Home</a></li>
-								<li id="in-page-link"><a href="#couple">Couple</a></li>
-								<li id="in-page-link"><a href="#wedding">Wedding</a></li>
-								<li id="in-page-link"><a href="#story">Our Story</a></li>
-								<li id="in-page-link"><a href="#gallery">Gallery</a></li>
-								<li id="in-page-link"><a href="#party">Briday Party</a></li>
-								<li id="in-page-link"><a href="#faq">FAQs</a></li>
-								<li id="in-page-link"><a href="#rsvp">RSVP</a></li>
+								<li><a href="#top">Home</a></li>
+								<li><a href="#couple">Couple</a></li>
+								<li><a href="#wedding">Wedding</a></li>
+								<li><a href="#story">Our Story</a></li>
+								<li><a href="#gallery">Gallery</a></li>
+								<li><a href="#party">Briday Party</a></li>
+								<li><a href="#faq">FAQs</a></li>
+								<li><a href="#rsvp">RSVP</a></li>
 							</ul>
 						</div>
+					</div>
+				</div>	
 			</nav>
 
 		<!-- Header -->
@@ -151,23 +175,23 @@
 				<div class="row">
 					<div class="display-t">
 						<div class="display-tc">
-									<div class="col-md-12">
-									<div class="event-wrap animate-box">
-										<h3 align="center">Ceremony & Reception</h3>
-										<div class="event-col" align="center">
-											<i class="icon-location"></i>
-											<span><a href="https://goo.gl/maps/RM6GUKGQrit" target="_blank">1952 Sycamore Dr</a></span>
-											<span><a href="https://goo.gl/maps/RM6GUKGQrit" target="_blank">San Marcos, CA 92069</a></span>
-										</div>
-										<div class="event-col" align="center">
-											<i class="icon-calendar"></i>
-											<span>Saturday 6</span>
-											<span>January, 2018</span>
-											<span>3:00 - 9:00 PM</span>
-										</div>
-										<p>Our wedding ceremony and reception will be at the beautiful <a href="https://goo.gl/maps/RM6GUKGQrit" target="_blank">Williams Barn</a> in San Marcos, California. We look forward to proclaiming our marriage vows before you and celebrating the beginning of our union over dinner!</p>
+							<div class="col-md-12">
+								<div class="event-wrap animate-box">
+									<h3 align="center">Ceremony & Reception</h3>
+									<div class="event-col" align="center">
+										<i class="icon-location"></i>
+										<span><a href="https://goo.gl/maps/RM6GUKGQrit" target="_blank">1952 Sycamore Dr</a></span>
+										<span><a href="https://goo.gl/maps/RM6GUKGQrit" target="_blank">San Marcos, CA 92069</a></span>
 									</div>
+									<div class="event-col" align="center">
+										<i class="icon-calendar"></i>
+										<span>Saturday 6</span>
+										<span>January, 2018</span>
+										<span>3:00 - 9:00 PM</span>
+									</div>
+									<p>Our wedding ceremony and reception will be at the beautiful <a href="https://goo.gl/maps/RM6GUKGQrit" target="_blank">Williams Barn</a> in San Marcos, California. We look forward to proclaiming our marriage vows before you and celebrating the beginning of our union over dinner!</p>
 								</div>
+							</div>
 
 						</div>
 					</div>

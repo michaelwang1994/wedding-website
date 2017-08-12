@@ -10,6 +10,8 @@
 * 	Template Style 
 *
 * ======================================================= */
+
+
 body {
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
@@ -1203,6 +1205,7 @@ form label {
 }
 
 #fh5co-testimonial .wrap-testimony {
+  padding: 10px;
   position: relative;
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide {
@@ -1226,7 +1229,7 @@ form label {
   zoom: 1;
   *display: inline;
   width: 100px;
-  height: 100px;
+  height: 150px;
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide figure img {
   width: 100px;
@@ -1838,6 +1841,36 @@ form label {
 
 .js .animate-box {
   opacity: 0;
+}
+
+#splashscreen {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 9998;
+  background-color: rgb(0, 0, 0);
+  opacity: 1;
+  transition: opacity 1s; 
+  
+}
+
+#password-form {
+  position: absolute; 
+  margin: auto;
+  top: 30%; 
+  left: 0%; 
+  bottom: 0; 
+  right: 0;
+
+}
+
+#password-row {
+  position: absolute; 
+  margin: auto;
+  padding: 10px;
+  left: 0; 
+  right: 0;
+
 }
 
 /*# sourceMappingURL=style.css.map */
