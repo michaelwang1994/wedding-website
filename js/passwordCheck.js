@@ -1,56 +1,34 @@
-function toggleScroll() {
-	disableScroll();
-}
-
-
 function checkPassword() {
 	var password = document.getElementById('password-field');
 	if (password.value == "wangtwobecomeone") {
-		window.scrollTo(0, 0);
-		document.getElementById('splashscreen').style.opacity = 0;
-		setTimeout(function() {
-			document.getElementById("splashscreen").remove();
-			enableScroll();
-		}, 
-		1000);
+        grantAccessToPage();
 	}
-	
 	else {
-		alert("Invalid Password.");
+		invalidPasswordAlert();
 	}
 };
 
-var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+function grantAccessToPage() {
+    resetWindow();
+    clearSplashScreen();
+    deleteSplashScreenClass();
+    enableScroll();
+};
 
-function preventDefault(e) {
-  e = e || window.event;
-  if (e.preventDefault)
-      e.preventDefault();
-  e.returnValue = false;  
-}
+function resetWindow() {
+    window.scrollTo(0, 0);
+};
 
-function preventDefaultForScrollKeys(e) {
-    if (keys[e.keyCode]) {
-        preventDefault(e);
-        return false;
-    }
-}
+function clearSplashScreen() {
+    document.getElementById('splashscreen').style.opacity = 0;
+};
 
-function disableScroll() {
-  if (window.addEventListener) // older FF
-      window.addEventListener('DOMMouseScroll', preventDefault, false);
-  window.onwheel = preventDefault; // modern standard
-  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-  window.ontouchmove  = preventDefault; // mobile
-  document.onkeydown  = preventDefaultForScrollKeys;
+function deleteSplashScreenClass() {
+    setTimeout(function() {
+        document.getElementById("splashscreen").remove();
+    }, 1000);
+};
 
-}
-
-function enableScroll() {
-    if (window.removeEventListener)
-        window.removeEventListener('DOMMouseScroll', preventDefault, false);
-    window.onmousewheel = document.onmousewheel = null; 
-    window.onwheel = null; 
-    window.ontouchmove = null;  
-    document.onkeydown = null;  
-}
+function invalidPasswordAlert() {
+    alert("Invalid Password.");
+};

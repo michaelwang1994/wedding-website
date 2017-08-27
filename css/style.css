@@ -1223,10 +1223,10 @@ form label {
   font-weight: 300;
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide figure {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   display: -moz-inline-stack;
   display: inline-block;
-  zoom: 1;
+  zoom: 1.5;
   *display: inline;
   width: 100px;
   height: 150px;
@@ -1241,7 +1241,7 @@ form label {
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide blockquote {
   border: none;
-  margin: 30px auto;
+  margin: 10px auto;
   width: 50%;
   position: relative;
   -webkit-border-radius: 4px;
@@ -1254,10 +1254,9 @@ form label {
     width: 100%;
   }
 }
-#fh5co-testimonial .wrap-testimony .testimony-slide blockquote p {
-  font-style: italic;
+#fh5co-testimonial .wrap-testimony .testimony-slide p {
   color: #8f989f;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.6em;
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide.active {
@@ -1871,6 +1870,16 @@ form label {
   left: 0; 
   right: 0;
 
+}
+
+.question {
+  font-weight: bold;  
+  list-style-type: none;
+}
+
+.answer {
+  font-style: italic;  
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=style.css.map */

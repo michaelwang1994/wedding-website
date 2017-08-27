@@ -63,14 +63,14 @@
 	<![endif]-->
 	
 	<!-- Scroll Disabler -->
-	<script src="js/scrollDisable.js"></script>
+	<script src="js/toggleScroll.js"></script>
 
 	<!-- Password -->
 	<script src="js/passwordCheck.js"></script>
 	
 
 	</head>
-	<body onload="toggleScroll()">
+	<body onload="disableScroll()">
 		<div id="splashscreen">
 			<div id="password-form" class="form-group col-sm-6 col-sm-offset-3">
 				<div class="row" id="password-row">
@@ -138,27 +138,58 @@
 						<h1>The Couple</h1>
 					</div>
 				</div>
-				<div class="couple-wrap animate-box">
+				<div id="couple-box" class="couple-wrap animate-box">
 					<div class="couple-half">
 						<div class="groom">
-							<img src="images/michael_model_chicago.jpg" alt="groom" class="cover">
+							<img src="images/michelle_model_chicago.jpg" alt="groom" class="cover">
 						</div>
 						<div class="desc-groom">
-							<h2>Michael Wang</h2>
-							<p>A quick impression of Michael will lead you to think that he's energetic, passionate, extremely positive and a huge dork. While he may thinks that he's none of these things, especially the last one, he's quick to point the glory to God for any of this.</p>
+							<h2>Michelle Wang</h2>
+							<p>Everyone who knows Michelle will tell you that she's one of the sweetest people you'll ever meet. Of course, get to know her a little while longer, and you'll see that she's sassy and loves to prank you. The part of her that doesn't change is her love for God and wanting to be obedient to Him.</p>
 						</div>
 					</div>
 					<p class="heart text-center"><i class="icon-heart2"></i></p>
 					<div class="couple-half">
 						<div class="bride">
-							<img src="images/michelle_model_chicago.jpg" alt="bride" class="cover">
+							<img src="images/michael_model_chicago.jpg" alt="bride" class="cover">
 						</div>
 						<div class="desc-bride">
-							<h2>Michelle Wang</h2>
-							<p>Everyone who knows Michelle will tell you that she's one of the sweetest people you'll ever meet. Of course, get to know her a little while longer, and you'll see that she's sassy and loves to prank you. The part of her that doesn't change is her love for God and wanting to be obedient to Him.</p>
+							<h2>Michael Wang</h2>
+							<p>A quick impression of Michael will lead you to think that he's energetic, passionate, extremely positive and a huge dork. While he may thinks that he's none of these things, especially the last one, he's quick to point the glory to God for any of this.</p>
+							</ul>
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="container">
+					<div class="col-md-10 col-md-offset-1 text-center ">
+						<h1>Q & A</h1>
+						<ul>
+							<li class="question">What do you like the most about the other person?</li>
+							<li class="answer">Michael: Her sincerity, sensibility, and humor. She's cracks me up all the time. She also has really childish expressions that I find very endearing.</li>
+							<li class="answer">Michelle: Michael is 99% of the time a very cheerful and upbeat guy. He rarely complains. He sees the best in every situation and in every person. He's also a very patient listener who takes the time and effort to understand what a person is going through.</li>
+							
+							<li class="question">What is your favorite memory together?</li>
+							<li class="answer">Michael: It's not a particular event, but I feel the most loved by Michelle when she asks me to do something again. Whether that be take another photo, saying that I love her, or writing her a card.</li>
+							<li class="answer">Michelle: Gah, so many! I'll share two of them: one of my favorite memories of Michael is how he found ways to physically care for me despite our #strongdistance relationship. For example, when I got sick (quite frequently), he would PostMate me a meal or ask a brother to get me wholesome orange juice. Secondly, that two hour times difference between us? He used it to his advantage and would give me a wake up call every workday morning to ensure that I wouldn't oversleep (not that I ever did or anything...). </li>
+							
+							<li class="question">How do you like to spend time together?</li>
+							<li class="answer">Michael: I love it when both of us use our gifts to serve God and the church!</li>
+							<li class="answer">Michelle: Anything where we can have fun interacting with one another over new experiences, such as the trying fun restaurants, touring Google headquarters, or trying rock climbing for the first time.</li>
+							
+							<li class="question">What makes this other person unique?</li>
+							<li class="answer">Michael: <a href="https://youtu.be/6dmYrh8vsyw">her tolerance of my many short-comings and insecurities</a>. Her ability to love me, not because I'm inherently lovable (trust me, the more you know about me the more you'll believe that!), but because God has loved her first and forgave her and has worked in her heart to love a sinner like me.</li>
+							<li class="answer">Michelle: He usually has his own personal, special nickname for each of his friends. Or he has a certain way he says certain people's names. If you aren't familiar with it, just hang around him long enough and you'll find out soon enough!</li>
+							
+							<li class="question">What's one thing you don't understand about him/her?</li>
+							<li class="answer">Michael: I don't understand why she likes shopping so much... Jokes aside, I don't understand how she has such an intuitive understanding of peoples' feelings and desires.</li>
+							<li class="answer">Michelle: Michael says I laugh a lot at him, and that's because sometimes, I just don't understand the complexity of how his mind works. For example, he would incorporate Chinese phrases into conversations that he translated from English slang. For example, "Jokes, dude," becomes "玩笑, dude".</li>
+							
+							<li class="question">Why do you want to marry each other?</li>
+							<li class="answer">Michael: because she's someone who will be able to help me paint a <a href="https://youtu.be/G8hmo0Ji-uo" target="_blank">wonderful picture of Christ and church</a>. Her gifts complement mine very well and I've benefitted so much from her wisdom, support, and rebukes.</li>
+							<li class="answer">Michelle: I want to marry Michael because he loves the Lord above all else. It's evident in the way that he prays, the way that he earnestly shares the gospel, the way he treats others with love, and the way he prioritizes the church. Because he walks closely with our Savior, Jesus Christ, Michael is able to die to himself and his own desires, instead choosing to serves others needs above his own. Michael is far from perfect, but he is eager to learn and willing to change through wise counsel. I've seen him grow into different roles of responsibility that God has given him, and I'm so thankful he is willing to take leadership of future little family. I cannot wait to marry you, Michael!</li>
+						</ul>
+					</div>
 			</div>
 		</div>
 		
@@ -362,16 +393,16 @@
 									<div class="item">
 										<div class="testimony-slide active text-center">
 											<figure>
-												<img src="images/couple-1.jpg" alt="user">
+												<img src="images/erica_nice.jpg" alt="user">
 											</figure>
 											<span>Erica Truong, Maid Of Honor</span>
-												<p>Michelle and Erica met in college. While Michael likes to take credit in introducing the two through a hip hop dance team. Though Erica dropped it shortly afterwards, thankfully, their relationship continued to grow. Erica has been there through the up's and down's of navigating through college, relationships, and beyond. Michelle remembers how Erica cried tears of joy when Michelle told her news of Michelle and Michael dating. Michelle admires Erica's intentional prayerfulness, her very adorable (and now, trademark) mannerisms, and her heart for anyone in need of a friend. </p>
+												<p>Michelle and Erica met in college. Michael likes to take credit in introducing the two through a hip hop dance team. Though Erica dropped it shortly afterwards, thankfully, their relationship continued to grow. Erica has been there through the up's and down's of navigating through college, relationships, and beyond. Michelle remembers how Erica cried tears of joy when Michelle told her news of Michelle and Michael dating. Michelle admires Erica's intentional prayerfulness, her very adorable (and now, trademark) mannerisms, and her heart for anyone in need of a friend. </p>
 										</div>
 									</div>
 									<div class="item">
 										<div class="testimony-slide active text-center">
 											<figure>
-												<img src="images/couple-1.jpg" alt="user">
+												<img src="images/jennifer_nice.jpg" alt="user">
 											</figure>
 											<span>Jennifer Mei, Bridesmaid</span>
 											<p>Jennifer has been Michelle's longtime older sister-in-Christ turned close friend back in high school. Michelle found Jennifer's dedication for the church and people inspiring, as well as her ability to care for others in a way that really made them feel loved. Though the two lived in different cities and went to different schools and different churches, they always found a way to connect through phone calls, care packages, and (attempting) to start a blog together.</p>
@@ -380,7 +411,7 @@
 									<div class="item">
 										<div class="testimony-slide active text-center">
 											<figure>
-												<img src="images/couple-2.jpg" alt="user">
+												<img src="images/sarah_nice.jpg" alt="user">
 											</figure>
 											<span>Sarah McIntire, Bridesmaid</span>
 											<p>Michelle met Sarah when they moved into the same apartment together as roommates -- well, actually, bunkmates. Little did they know that that was a precursor to how close they would become over the next year. Sarah has never failed to be a constant --- and Michelle means constant --- source of overflowing joy, love, and hugs. Sarah's cheerful, sacrificial nature is one of many things that Michelle constantly learns from Sarah. Michelle cherishes sharing a love for ice cream (dairy-free or not), face masks, Korean dramas, and singing Broadway musicals in the car with Sarah.</p>
@@ -389,25 +420,25 @@
 									<div class="item">
 										<div class="testimony-slide active text-center">
 											<figure>
-												<img src="images/couple-3.jpg" alt="user">
+												<img src="images/caywin_nice.jpg" alt="user">
 											</figure>
 											<span>Caywin Zhuang, Groomsman</span>
-											<p>Caywin and Michael met through Enoch. Since living together, Michael has learned many things from Caywin such as cooking, Chinese, and always asking challenging questions in order to grow closer to God. Michael continues to admire Caywin's physical prowess.</p>
+											<p>Caywin and Michael met through Enoch. Since living together, Michael has learned many things from Caywin such as cooking, Chinese, and always asking challenging questions in order to grow closer to God. One time, Michael came home with a high fever and Caywin made soup and fed Michael medicine. Michael continues to admire Caywin's physical prowess.</p>
 										</div>
 									</div>
 									<div class="item">
 										<div class="testimony-slide active text-center">
 											<figure>
-												<img src="images/couple-3.jpg" alt="user">
+												<img src="images/enoch_nice.jpg" alt="user">
 											</figure>
 											<span>Enoch Chan, Best Man</span>
-											<p>Michael first met Enoch while attending church in Chicago. Enoch invited Michael to dinner and the two brothers immediately clicked. Michael continues to benefit from how Enoch listens sincerely to his problems, gently encourages him and puts others above himself. Enoch is nothing short of amazing.</p>
+											<p>Michael first met Enoch while attending church in Chicago. Enoch invited Michael to dinner and the two brothers immediately clicked. Michael continues to benefit from how Enoch listens sincerely to his many, many problems, gently encourages him to fight sin and love God and puts others above himself. Enoch is nothing short of amazing.</p>
 										</div>
 									</div>
 									<div class="item">
 										<div class="testimony-slide active text-center">
 											<figure>
-												<img src="images/couple-3.jpg" alt="user">
+												<img src="images/steven_nice.jpg" alt="user">
 											</figure>
 											<span>Steven Chung, Groomsman</span>
 											<p>Steven has been one of Michael's closest friends since college. While their personalities clashed and they didn't like each other much at first, a close friendship quickly developed through their brotherhood in Christ. Steven has always been a constant source of joy for Michael with his pitch-perfect Taylor Swift singing, last-minute spontaniety and passion to see God magnified in all areas of his life.</p>
@@ -427,53 +458,100 @@
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 						<h1>Frequently Asked Questions</h1>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
 					</div>
 				</div>
 
 				<div class="row">
-					<div class="col-md-6">
-						<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-							<span class="icon">
-								<i class="icon-calendar"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>We Organized Events</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-							</div>
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-aircraft"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Accommodations</h3>
+							<p>As many of you are guests coming in from out of town, we want to make sure that you are fully comfortable in the San Diego sun. Hotels and AirBnb options will be announced soon.</p>
 						</div>
-
-						<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-							<span class="icon">
-								<i class="icon-image"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Photoshoot</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-							</div>
-						</div>
-
-						<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-							<span class="icon">
-								<i class="icon-video"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Video Editing</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-							</div>
-						</div>
-
 					</div>
 
-					<div class="col-md-6 animate-box">
-						<div class="fh5co-video fh5co-bg" style="background-image: url(images/img_bg_3.jpg); ">
-							<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video2"></i></a>
-							<div class="overlay"></div>
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-traffic-cone"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Parking</h3>
+							<p>Parking will be available at the Williams Barn in San Marcos.</p>
+						</div>
+					</div>
+
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-man"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>What to Wear</h3>
+							<p>As this is a more formal event with ceremonial aspects, please come dressed in your Sunday best! This means suits for guys and dresses for girls.</p>
+						</div>
+					</div>
+
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-instagram"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Photography</h3>
+							<p>We are delighted to have the wonderful <a href="http://www.orangeturtlephotography.com/" target="_blank">Orange Turtle Photography</a> as our official photographers. Feel free to take photos without sound and without flash during the event. Our official wedding hashtag is: #wangtwobecomeone.</p>
+						</div>
+					</div>
+
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-circle-plus"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Additional Invites</h3>
+							<p>We are very honored for you to join us! At this time we are not accepting plus ones and other invites.</p>
+						</div>
+					</div>
+
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-home"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Church</h3>
+							<p>If you're staying around on Sunday, feel free to check out <a href="http://lighthousebc.com/" target="_blank">Lighthouse Bible Church</a>, the church Michael and Michelle were members of. Michael and Michelle have many fond memories of serving together in childrens and outreach ministries here. The Biblical teaching, extremely loving members and desire to see God praised at this church has played a big part in Michael and Michelle's growth as Christians.</p>
+						</div>
+					</div>
+
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-cake"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Restaurants</h3>
+							<p>San Diego is home to some of the finest restaurants in the world. Michael and Michelle highly recommend: <a href="http://www.juniperandivy.com/" target="_blank">Juniper and Ivy</a> where they went after Michael proposed, <a href="https://caffecalabria.com/" target="_blank">Caffe Calabria</a>, where they went on their first date, and <a href="https://www.juicekaboose.com/" target="_blank">Juice Kaboose</a> for a refreshing acai bowl, a favorite of Michelle's. For those looking for the perfect late night "snack", check out Christian Fries at <a href="https://www.yelp.com/biz/vallarta-express-mexican-eatery-san-diego" target="_blank">Vallartas</a>. Of course, one can't talk about food at San Diego without mentioning <a href="https://philsbbq.net/" target="_blank">Phil's BBQ</a>.</p>
+						</div>
+					</div>
+
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-image"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Places to See</h3>
+							<p>San Diego features a dramatic range of temperatures from 59° to 82° Farenheit year round. If you're brave enough to venture outside, some of our favorites include the <a href="https://foursquare.com/v/la-jolla-cliffs/4c27deccfe6e2d7fc276523c" target="_blank">La Jolla Cliffs</a>, <a href="https://torreypine.org/" target="_blank">Torrey Pines State Natural Reserve</a>, <a href="http://www.soledadmemorial.com/" target="_blank">Mount Soledad</a>, and <a href="https://www.balboapark.org/" target="_blank">Balboa Park</a>.</p>
+						</div>
+					</div>
+
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-shopping-cart"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Gifts</h3>
+							<p>Your presence is your greatest gift to us! But if you still want to contribute a material gift, please take a look at our registry on Amazon. Monetary gifts can be given at the gift table during the wedding.</p>
 						</div>
 					</div>
 				</div>
-
-				
 			</div>
 		</div>
 
@@ -565,4 +643,3 @@
 
 	</body>
 	</html>
-
